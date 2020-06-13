@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>HTML 5</title>
+  </head>
+  <body>
+    <h1 style="text-align: center;">Class Lecture</h1>
+    <h2 style="text-align: center;">Css Layout</h2>
+    <p>Usually CSS use 3 system for creating a website properties.</p>
+    <ul>
+      <li>Float</li>
+      <li>Flex</li>
+      <li>Grid</li>
+    </ul>
+    <h2>Float properties:</h2>
+    <p>
+      When it comes to define a website design, We need to identify the layout
+      and devide it into parts. By floating body parts we can make 2 division.
+      one is blog and 2nd is contact.
+    </p>
+
+    <div class="layout">
+      <!--Layout-section-->
+      <header>Head section</header>
+      <div class="wrapper">
+        <div class="blog">Blog Part</div>
+        <div class="contact">Contact Part</div>
+      </div>
+      <footer>Footer</footer>
+    </div>
+
+    <h2>ClearFix properties</h2>
+    <p>Instead of using float we can also use clearfix to make this layout</p>
+
+    <div class="layout">
+      <!--Layout-section-->
+      <header>Head section</header>
+      <div class="container">
+        <div class="blog1">Blog Part</div>
+        <div class="contact1">Contact Part</div>
+      </div>
+      <div class="footer">Footer</div>
+    </div>
+
+    <h2>ClearFix issue</h2>
+    <p>
+      from the above example we can observe, we are facing an issue while using
+      clear properties. The bottom border of body section is not visible in
+      clearfix properties example. <br />
+      <strong
+        >So it is the best to use float properties instead of using
+        clearfix.</strong
+      >
+    </p>
+
+    <h2>Elements of HTML From w3schools</h2>
+    <h3>blockquote:</h3>
+    <blockquote cite="goodreads.com/quotes">
+      <q
+        >I'm selfish, impatient and a little insecure. I make mistakes, I am out
+        of control and at times hard to handle. But if you can't handle me at my
+        worst, then you sure as hell don't deserve me at my best.</q
+      >
+      ― Marilyn Monroe
+    </blockquote>
+
+    <h3>bdo:</h3>
+    <bdo dir="rtl">This line will be written from right to left</bdo>
+    <h3>colspan:</h3>
+    <table style="width: 100%;">
+      <tr>
+        <th>Head 1</th>
+        <th colspan="2">Head 2</th>
+      </tr>
+      <tr>
+        <td>insert data</td>
+        <td>insert data</td>
+        <td>insert data</td>
+      </tr>
+    </table>
+    <h3>rowspan:</h3>
+    <table style="width: 100%;">
+      <tr>
+        <th>Head</th>
+        <td>insert data</td>
+      </tr>
+      <tr>
+        <th rowspan="2">Head 2</th>
+        <td>insert data</td>
+      </tr>
+      <tr>
+        <td>insert data</td>
+      </tr>
+    </table>
+    <h3>iframe:</h3>
+    <div class="iframe">
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/Ght0sqn52JY"
+        frameborder="2"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+    </div>
+    <h3>Google map Integrate:</h3>
+
+    <div class="iframe">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3652.006854015175!2d90.37139121434832!3d23.747134994819366!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755bf4ce8f8ad0f%3A0xd4c0ea52c962b720!2sRd%2010%2FA%2C%20Dhaka%201205!5e0!3m2!1sen!2sbd!4v1592041310903!5m2!1sen!2sbd"
+        width="100%"
+        height="250"
+        frameborder="0"
+        style="border: 0;"
+        allowfullscreen=""
+        aria-hidden="false"
+        tabindex="0"
+      ></iframe>
+    </div>
+  </body>
+</html>
